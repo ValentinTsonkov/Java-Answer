@@ -5,14 +5,14 @@ public class test {
     public static void main(String[] args) 
     {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter radius:");
+        System.out.println("Type radius:");
         double r = Integer.parseInt(scan.nextLine());
-        System.out.println("Enter height:");
+        System.out.println("Type height:");
         double h = Integer.parseInt(scan.nextLine());
 
         if (r <= 0) 
         {
-            throw new Error("Numbers can't be negative");
+            throw new Error("Numbers cannot be negative!");
         }
         
         System.out.println(String.format("S = %.2f",s(r)));
